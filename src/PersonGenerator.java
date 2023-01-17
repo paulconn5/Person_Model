@@ -19,7 +19,7 @@ public class PersonGenerator
         Scanner in = new Scanner(System.in);
 
         do {
-            ID = SafeInput.getRegExString(in, "Enter a 4-digit id", "" + "\\d{4}");
+            ID = SafeInput.getRegExString(in, "Enter a 6-digit id", "" + "\\d{6}");
             firstName = SafeInput.getNonZeroLenString(in, "What is your first name");
             lastName = SafeInput.getNonZeroLenString(in, "What is your last name");
             title = SafeInput.getNonZeroLenString(in, "What is your title");
@@ -39,7 +39,6 @@ public class PersonGenerator
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
-
 
     }
 }
